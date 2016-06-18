@@ -309,7 +309,7 @@ Model File Name              | Type            | AUC         | Comments
 [h2o.randomforest.model.4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.4.R)  | H2o Random Forest            | 0.8107832     | Slow
 [h2o.deeplearning.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.1.R)  | H2o deeplearning            | 0.8018106     | Normal
 [h2o.deeplearning.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.2.R)  | H2o deeplearning            | 0.7790996     | Normal
-
+[h2o.deeplearning.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.3.R)  | H2o deeplearning            | ?     | Slow
 
 
 ### 12. Project Resources
@@ -326,5 +326,18 @@ https://www.kaggle.com/c/santander-customer-satisfaction/leaderboard
 
 
 ### 14. References
-1. H2o.ai - Gradient Boosting Machine. Avaiable at: http://www.h2o.ai/verticals/algos/gbm/
+1. H2o.ai - Gradient Boosting Machine. Available at: http://www.h2o.ai/verticals/algos/gbm/
 2. Dal Pozzolo, Andrea, et al. "Racing for unbalanced methods selection." Intelligent Data Engi- neering and Automated Learning - IDEAL 2013. Springer Berlin Heidelberg, 2013. 24-31.
+
+### 15. Tutorials
+1. Anomaly Detection on MNIST with H2O Deep Learning. Available at: https://github.com/h2oai/h2o-training-book/blob/master/hands-on_training/anomaly_detection.md
+2. A little H2O deeplearning experiment on the MNIST data set. Available at: http://www.r-bloggers.com/a-little-h2o-deeplearning-experiment-on-the-mnist-data-set/
+3. H2O GBM Tuning Tutorial for R. Available at: http://blog.h2o.ai/2016/06/h2o-gbm-tuning-tutorial-for-r/
+4. Ensembles: Stacking, Super Learner. Available at: https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/ensembles-stacking
+5. Arno Candel - Anomaly Detection and Feature Engineering. Available at:  https://www.youtube.com/watch?v=fUSbljByXak
+6. H2O Meetups and Presentations. Available at: https://github.com/h2oai/h2o-meetups
+7. Training materials for H2O World. Available at: https://github.com/h2oai/h2o-training-book or https://www.gitbook.com/book/h2o/h2o-world-2015-training/details
+8. subsemble. Available at: https://github.com/ledell/subsemble
+9. H2O Tutorials. Available at: http://learn.h2o.ai/content/
+10. Example lending_club_bad_loans_ensemble.R. Available at: https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/lending_club_bad_loans_ensemble.R
+11.
