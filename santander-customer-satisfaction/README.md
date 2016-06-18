@@ -1,6 +1,40 @@
-### santander-customer-satisfaction
+### Kaggle Santander Customer Satisfaction Competition
+
+
 
 https://www.kaggle.com/c/santander-customer-satisfaction<BR>
+
+Started: 7:43 pm, Wednesday 2 March 2016 UTC
+Ended: 11:59 pm, Monday 2 May 2016 UTC (61 total days)
+
+
+###The problem
+
+Which customers are happy customers?
+
+From frontline support teams to C-suites, customer satisfaction is a key measure of success. Unhappy customers don't stick around. What's more, unhappy customers rarely voice their dissatisfaction before leaving.
+
+Santander Bank is asking Kagglers to help them identify dissatisfied customers early in their relationship. Doing so would allow Santander to take proactive steps to improve a customer's happiness before it's too late.
+
+In this competition, you'll work with hundreds of anonymized features to predict if a customer is satisfied or dissatisfied with their banking experience.
+
+### Evaluation and Submission File
+
+Evaluation
+
+Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
+
+Submission File
+
+For each ID in the test set, you must predict a probability for the TARGET variable. The file should contain a header and have the following format:
+
+```
+ID,TARGET
+2,0
+5,0
+6,0
+etc.
+```
 
 ### Dataset
 
