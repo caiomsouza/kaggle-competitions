@@ -43,6 +43,33 @@ etc.
 
 ### Dataset
 
+The dataset contains 371 variables (all continuous variables).
+
+A continuous variable is a variable that has an infinite number of possible values. In other words, any value is possible for the variable. A continuous variable is the opposite of a discrete variable, which can only take on a certain number of values.Sep 11, 2013
+
+Numbers of observations (Row number):
+* Train: 76020 rows
+* Test: 75818 rows
+
+Number of 1s (train): 3008 (3.95%) (Imbalanced Dataset Problem)
+
+Variables:
+* 34 variables with one single value; (Action: Delete all of them)
+* 100 variables with two unique values; (binary variables)
+* 157 variables with values between 3 y 101 unique values; (categorical variables)
+* 80 variables has more than 101 distinct values; (continuous variables)
+
+### Unbalanced Dataset Problem
+
+A dataset is said to be unbalanced when the class of interest (minority class) is much rarer than normal behaviour (majority class). The cost of missing a minority class is typically much higher that missing a majority class. Most learning systems are not prepared to cope with unbalanced data and several techniques have been proposed to rebalance the classes. This package implements some of most well-known techniques and propose a racing algorithm [2] to select adaptively the most appropriate strategy for a given unbalanced task [2].
+
+Some links about Unbalanced Dataset Problem:
+* http://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/
+* http://statistics.berkeley.edu/sites/default/files/tech-reports/666.pdf
+* http://florianhartl.com/thoughts-on-machine-learning-dealing-with-skewed-classes.html
+* https://cran.r-project.org/web/packages/unbalanced/unbalanced.pdf
+* https://www3.nd.edu/~dial/publications/chawla2005data.pdf
+
 
 ### ML Algorithms
 
@@ -223,3 +250,4 @@ Data preparation output:<BR>
 
 ### References
 1. H2o.ai - Gradient Boosting Machine. Avaiable at: http://www.h2o.ai/verticals/algos/gbm/
+2. Dal Pozzolo, Andrea, et al. "Racing for unbalanced methods selection." Intelligent Data Engi- neering and Automated Learning - IDEAL 2013. Springer Berlin Heidelberg, 2013. 24-31.
