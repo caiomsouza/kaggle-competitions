@@ -1,3 +1,19 @@
+### Project creator
+Caio Fernandes Moreno (caiofern@ucm.es)
+twitter: @caiomsouza
++ 34 609 349 566
+
+Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)
+
+### Faculty of Statistics at UCM
+
+Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)
+UCM - Universidad Complutense de Madrid
+Facultad de Estudios Estadísticos
+Avda. Puerta de Hierro s/n
+Ciudad Universitaria
+28040-MADRID
+
 ### Kaggle Santander Customer Satisfaction Competition
 
 This project was created by Caio Fernandes Moreno, student at the faculty of statistics at UCM - Complutense University of Madrid - Universidad Complutense de Madrid.<BR>
@@ -72,6 +88,17 @@ Some links about Unbalanced Dataset Problem:
 
 
 ### ML Algorithms
+
+Below is the list of the algorithms I must use in this project:
+* Redes Neuronales
+* Regresión Logística
+*	Random Forest
+*	Bagging
+*	Gradient Boosting
+*	Support Vector Machines (try at least polynomial kernel with grade 1 - kernel polinómico de grado 1)
+* Simple decision Tree to understand the dataset;
+
+### ML Algorithms Definitions
 
 ### Gradient Boosting Machine
 A Gradient Boosting Machine (GBM) is an ensemble of tree models (either regression or classification). Both are forward-learning ensemble methods that obtain predictive results through gradually improved estimates. Boosting is a flexible nonlinear regression procedure that helps improve the accuracy of trees. By sequentially applying weak classification algorithms to incrementally changing data, a series of decision trees are created that produce an ensemble of weak prediction models. [1]
