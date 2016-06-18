@@ -57,6 +57,9 @@ labels <- as.data.frame(train$TARGET)[,1]
 
 labels
 
+as.data.frame(pred$pred)[,4]
+
+h2o.auc(perf$ensemble)
 
 
 #install.packages("cvAUC")
@@ -71,5 +74,8 @@ data.frame(learner, auc)
 # http://www.rdocumentation.org/packages/h2o/functions/h2o.glm
 # http://s3.amazonaws.com/h2o-release/h2o/master/1732/docs-website/datascience/glm.html
 # https://cran.r-project.org/web/packages/h2o/h2o.pdf
+
+# https://github.com/h2oai/h2o-3/tree/master/h2o-r/ensemble
+
 
 
