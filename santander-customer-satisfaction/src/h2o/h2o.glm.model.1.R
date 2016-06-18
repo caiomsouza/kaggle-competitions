@@ -57,6 +57,8 @@ class(h2o.glm.model1.pred.df)
 
 #pred<-exp(h2o.glm.model1.pred)
 
+h2o.auc(h2o.glm.model1)
+
 # Add Test ID for the predictions
 test.id <- test$ID
 #test$TARGET <- -1
