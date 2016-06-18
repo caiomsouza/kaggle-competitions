@@ -156,7 +156,7 @@ cat(test.dataset.path)
 ```
 Code:<BR> https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/utils/load_datasets.R<BR>
 
-### Data preparation
+### 10. Data preparation
 
 The script below will do data preparation for the Santander Customer Satisfaction dataset.
 * Extracting TARGET
@@ -296,19 +296,19 @@ Data preparation output:<BR>
 
 
 
-### Project Resources
+### 11. Project Resources
 * Two semester of classes (SEMMA and Neuronal Networks);
 * More than 100 hours of personal dedication;
 * A lot of days dedicate to create models and submit at Kaggle;
 * 33 submitted models to Kaggle Platform during the competition;
 
-### Personal Final Results
+### 12. Personal Final Results
 My final position was 1599 from 5123 with AUC = 0.825471.
 
 Link to Private Leaderboard - Santander Customer Satisfaction
 https://www.kaggle.com/c/santander-customer-satisfaction/leaderboard
 
 
-### References
+### 13. References
 1. H2o.ai - Gradient Boosting Machine. Avaiable at: http://www.h2o.ai/verticals/algos/gbm/
 2. Dal Pozzolo, Andrea, et al. "Racing for unbalanced methods selection." Intelligent Data Engi- neering and Automated Learning - IDEAL 2013. Springer Berlin Heidelberg, 2013. 24-31.
