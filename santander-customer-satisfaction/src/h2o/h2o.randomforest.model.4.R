@@ -66,6 +66,7 @@ class(h2o.randomForest.model4.pred.df)
 #pred<-exp(h2o.glm.model1.pred)
 
 h2o.auc(h2o.randomForest.model4)
+# AUC: 0.8107832
 
 # Add Test ID for the predictions
 test.id <- test$ID
