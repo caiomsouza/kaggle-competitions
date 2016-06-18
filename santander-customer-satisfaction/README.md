@@ -1,6 +1,6 @@
 ### Kaggle Santander Customer Satisfaction Competition
 
-This project was created by Caio Fernandes Moreno, student at the faculty of statics at UCM.<BR>
+This project was created by Caio Fernandes Moreno, student at the faculty of statistics at UCM - Complutense University of Madrid - Universidad Complutense de Madrid.<BR>
 The main purpose of this work is to learn data mining.<BR>
 This is an academic project.<BR>
 
