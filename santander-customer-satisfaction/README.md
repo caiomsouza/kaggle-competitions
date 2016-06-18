@@ -1,12 +1,10 @@
 ### Kaggle Santander Customer Satisfaction Competition
 
 This project was created by Caio Fernandes Moreno, student at the faculty of statistics at UCM - Complutense University of Madrid - Universidad Complutense de Madrid.<BR>
-The main purpose of this work is to learn data mining.<BR>
-This is an academic project.<BR>
+The main purpose of this academic project is to learn data mining techniques, statistics, machine learning, R, SAS, data preparation, etc.<BR>
 
-"Redes Neuronales y Algoritmos Genéticos"<BR>
+Neuronal Networks and Genetic Algorithms / Redes Neuronales y Algoritmos Genéticos<BR>
 Master degree in Data Mining and Business Intelligence<BR>
-UCM - "Universidad Complutense de Madrid"<BR>
 
 Started: 7:43 pm, Wednesday 2 March 2016 UTC<BR>
 Ended: 11:59 pm, Monday 2 May 2016 UTC (61 total days)<BR>
