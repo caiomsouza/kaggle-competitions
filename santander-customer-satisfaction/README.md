@@ -46,6 +46,13 @@ Script code:<BR> https://github.com/caiomsouza/kaggle-competitions/blob/master/s
 
 ### Data preparation
 
+The script below will do data preparation for the Santander Customer Satisfaction dataset.
+* Extracting TARGET
+* 0 count per line
+* Removing constant features
+* Removing identical features
+
+
 ../src/utils/clean_datasets.R
 
 ```
