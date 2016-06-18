@@ -298,11 +298,11 @@ Data preparation output:<BR>
 
 Model File Name              | Type            | AUC         | Comments
 ------------            | -------------   | ------------| ------------
+[xgb.model.1.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.1.R) | xgboost is short for eXtreme Gradient Boosting | 0.825281 | Extreme Fast
+[xgb.model.2.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.2.R) | xgboost is short for eXtreme Gradient Boosting | 0.826584 | Extreme Fast
 [glm.model.1](http://github.com)            | GLM             | 0.80        | No comments
 randomforest.model.1    | Random Forest   | 0.82        | No comments
 randomforest.model.1    | Random Forest   | 0.82        | No comments
-[xgb.model.1.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.1.R) | xgboost is short for eXtreme Gradient Boosting | 0.825281 | Extreme Fast
-[xgb.model.2.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.2.R) | xgboost is short for eXtreme Gradient Boosting | 0.826584 | Extreme Fast
 
 
 ### 12. Project Resources
