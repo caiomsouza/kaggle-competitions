@@ -1,11 +1,11 @@
-### Project creator
+### 1. Project creator
 Caio Fernandes Moreno (caiofern@ucm.es)
 twitter: @caiomsouza
 + 34 609 349 566
 
 Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)
 
-### Faculty of Statistics at UCM
+### 2. Faculty of Statistics at UCM
 
 Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)
 UCM - Universidad Complutense de Madrid
@@ -14,7 +14,7 @@ Avda. Puerta de Hierro s/n
 Ciudad Universitaria
 28040-MADRID
 
-### Kaggle Santander Customer Satisfaction Competition
+### 3. Kaggle Santander Customer Satisfaction Competition
 
 This project was created by Caio Fernandes Moreno, student at the faculty of statistics at UCM - Complutense University of Madrid - Universidad Complutense de Madrid.<BR>
 The main purpose of this academic project is to learn data mining techniques, statistics, machine learning, R, SAS, data preparation, etc.<BR>
@@ -29,7 +29,7 @@ Ended: 11:59 pm, Monday 2 May 2016 UTC (61 total days)<BR>
 Competition link:<BR>
 https://www.kaggle.com/c/santander-customer-satisfaction<BR>
 
-###The problem
+### 4. The problem
 
 Which customers are happy customers?
 
@@ -39,7 +39,7 @@ Santander Bank is asking Kagglers to help them identify dissatisfied customers e
 
 In this competition, you'll work with hundreds of anonymized features to predict if a customer is satisfied or dissatisfied with their banking experience.
 
-### Evaluation and Submission File
+### 5. Evaluation and Submission File
 
 Evaluation
 
@@ -57,11 +57,14 @@ ID,TARGET
 etc.
 ```
 
-### Dataset
-
-The dataset contains 371 variables (all continuous variables).
+### 6. Dataset
+The dataset provided by Santander Bank is anonymized and contains 371 variables (all continuous variables).
 
 A continuous variable is a variable that has an infinite number of possible values. In other words, any value is possible for the variable. A continuous variable is the opposite of a discrete variable, which can only take on a certain number of values.Sep 11, 2013
+
+The TARGET column is the variable to predict. It equals 1 (one) for unsatisfied customers and 0 for satisfied customers.
+
+The Kaggle Competition Objective is to predict who are satisfied and unsatisfied clients.
 
 Numbers of observations (Row number):
 * Train: 76020 rows
@@ -74,6 +77,13 @@ Variables:
 * 100 variables with two unique values; (binary variables)
 * 157 variables with values between 3 y 101 unique values; (categorical variables)
 * 80 variables has more than 101 distinct values; (continuous variables)
+
+Files:
+* train.csv - with TARGET variable
+* test.csv - without TARGET variable
+
+Files at: https://github.com/caiomsouza/kaggle-competitions/tree/master/santander-customer-satisfaction/dat
+
 
 ### Unbalanced Dataset Problem
 
