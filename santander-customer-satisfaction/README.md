@@ -6,6 +6,7 @@ The main purpose of this academic project is to learn data mining techniques, st
 Neuronal Networks and Genetic Algorithms / Redes Neuronales y Algoritmos Genéticos<BR>
 Master degree in Data Mining and Business Intelligence<BR>
 
+Kaggle Competition dates:<BR>
 Started: 7:43 pm, Wednesday 2 March 2016 UTC<BR>
 Ended: 11:59 pm, Monday 2 May 2016 UTC (61 total days)<BR>
 
