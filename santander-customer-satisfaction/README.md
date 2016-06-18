@@ -1,11 +1,11 @@
-### 1. Project Student and Professor
+### 1. Student and Professor
 
 Student: <BR>
 Caio Fernandes Moreno (caiofern@ucm.es) <BR>
 twitter: @caiomsouza <BR>
 
 Professor: <BR>
-Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)<BR>
+Prof. Phd. Javier Portella<BR>
 
 ### 2. Faculty of Statistics at UCM
 
