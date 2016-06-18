@@ -312,7 +312,7 @@ Model File Name              | Type            | AUC         | Comments
 [h2o.deeplearning.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.3.R)  | H2o deeplearning            | ?     | Slow
 [h2o.gbm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.gbm.model.1.R)  | H2o GBM            | *0.8766553*     | Normal
 [h2o.ensembles.model1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.ensembles.model1.R)  | H2o ensembles             | ??     | Normal
-[h2o.stack_models.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o_stack_models.R)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables)             | ??     | Normal
+[h2o.stack_models.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o_stack_models.R)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables             | ??     | Normal
 [svm_model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/svm_model.1.R)  | SVM (Support Vector Machines)           | ??     | Normal
 
 
@@ -324,10 +324,22 @@ Model File Name              | Type            | AUC         | Comments
 
 ### 13. Personal Final Results
 My *final position* was 1599 from 5123 with AUC = 0.825471.
+The first place had an AUC of 0.829072.
+
+The difference was 0.003601. First place receive a prize of $30,000.
+```
+> 0.829072 - 0.825471
+[1] 0.003601
+```
 
 Link to Private Leaderboard - Santander Customer Satisfaction
 https://www.kaggle.com/c/santander-customer-satisfaction/leaderboard
 
+Prizes<BR>
+1st place - $30,000<BR>
+2nd place - $20,000<BR>
+3rd place - $10,000<BR>
+https://www.kaggle.com/c/santander-customer-satisfaction/details/prizes<BR>
 
 ### 14. References
 1. H2o.ai - Gradient Boosting Machine. Available at: http://www.h2o.ai/verticals/algos/gbm/
