@@ -312,7 +312,8 @@ Model File Name              | Type            | AUC         | Comments
 [h2o.deeplearning.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.3.R)  | H2o deeplearning            | ?     | Slow
 [h2o.gbm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.gbm.model.1.R)  | H2o GBM            | *0.8766553*     | Normal
 [h2o.ensembles.model1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.ensembles.model1.R)  | H2o ensembles             | ??     | Normal
-[h2o.stack_models.R](aa)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables)             | ??     | Normal
+[h2o.stack_models.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o_stack_models.R)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables)             | ??     | Normal
+[svm_model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/svm_model.1.R)  | SVM (Support Vector Machines)           | ??     | Normal
 
 
 ### 12. Project Resources
