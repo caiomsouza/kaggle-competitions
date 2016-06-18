@@ -3,7 +3,6 @@
 Student: <BR>
 Caio Fernandes Moreno (caiofern@ucm.es) <BR>
 twitter: @caiomsouza <BR>
-+ 34 609 349 566 <BR>
 
 Professor: <BR>
 Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)<BR>
