@@ -43,7 +43,14 @@ h2o.ensemble.model1 <- h2o.ensemble(y = "TARGET", x = col, training_frame = trai
                     cvControl = list(V = 5))
 
 print(h2o.ensemble.model1)
-h2o.auc(h2o.ensemble.model1)
+h2o.ensemble.model1
+
+# There is an error in the code below... how can I add a column in h2o dataset.
+test$TARGET <- -1
+test.hex$TARGET <- NULL
+# Evaluate performance on a test set
+perf <- h2o.ensemble_performance(h2o.ensemble.model1, newdata = test.hex)
+perf
 
 
 pred <- predict(h2o.ensemble.model1, test.hex)
@@ -56,6 +63,8 @@ predictions
 labels <- as.data.frame(train$TARGET)[,1]
 
 labels
+
+perf$ensemble
 
 as.data.frame(pred$pred)[,4]
 

@@ -3,16 +3,25 @@
 library(h2oEnsemble)  # Requires version >=0.1.8 of h2oEnsemble
 localH2O <-  h2o.init(nthreads = -1)  # Start an H2O cluster with nthreads = num cores on your machine
 
+# Clean everything in R
+gc()
+rm(list = ls())
+
 
 # Import a sample binary outcome train/test set into R
-train <- h2o.importFile("~/git/github.com/kaggle-competitions/santander-customer-satisfaction/dat/train.csv")
-test <- h2o.importFile("~/git/github.com/kaggle-competitions/santander-customer-satisfaction/dat/test.csv")
+train <- h2o.importFile("/Users/caiomsouza/git/github.com/kaggle-competitions/santander-customer-satisfaction/dat/train.csv")
+test <- h2o.importFile("/Users/caiomsouza/git/github.com/kaggle-competitions/santander-customer-satisfaction/dat/test.csv")
 y <- "TARGET"
+y
 x <- setdiff(names(train), y)
+x
 family <- "binomial"
 
 #For binary classification, response should be a factor
 train[,y] <- as.factor(train[,y])
+
+# Create TARGET in Test Dataset
+test$TARGET <- -1
 test[,y] <- as.factor(test[,y])
 
 

@@ -311,6 +311,9 @@ Model File Name              | Type            | AUC         | Comments
 [h2o.deeplearning.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.2.R)  | H2o deeplearning            | 0.7790996     | Normal
 [h2o.deeplearning.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.3.R)  | H2o deeplearning            | ?     | Slow
 [h2o.gbm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.gbm.model.1.R)  | H2o GBM            | *0.8766553*     | Normal
+[h2o.ensembles.model1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.ensembles.model1.R)  | H2o ensembles             | ??     | Normal
+[h2o.stack_models.R](aa)  | H2o Stack Model ()             | ??     | Normal
+
 
 ### 12. Project Resources
 * Two semester of classes (SEMMA and Neuronal Networks);
