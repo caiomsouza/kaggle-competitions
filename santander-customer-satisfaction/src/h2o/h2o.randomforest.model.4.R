@@ -28,44 +28,9 @@ class(train.hex)
 summary(train.hex)
 col <- colnames(train)[-372]
 
-# H20 Random Forest 
-h2o.randomForest.model2 <-
-  h2o.randomForest(y = "TARGET", 
-                   x = col, 
-                   training_frame = train.hex,
-                   ntree = 200, 
-                   seed = 1000000)
-
-h2o.randomForest.model2
-
-h2o.auc(h2o.randomForest.model2)
-# 
-head(h2o.varimp(h2o.randomForest.model2),20)
-# AUC 0.8107832
-
-
-# H20 Random Forest 
-h2o.randomForest.model3 <-
-  h2o.randomForest(y = "TARGET", 
-                   x = col, 
-                   training_frame = train.hex,
-                   ntree = 200, 
-                   max_depth = 30,
-                   stopping_rounds = 2,
-                   stopping_tolerance = 1e-2,
-                   score_each_iteration = TRUE,
-                   seed = 3000000)
-
-h2o.randomForest.model3
-
-h2o.auc(h2o.randomForest.model3)
-# 
-head(h2o.varimp(h2o.randomForest.model3),20)
-
-# AUC : 0.7802334
 
 # H20 Random Forest with nfolds = 5
-h2o.randomForest.model1 <-
+h2o.randomForest.model4 <-
   h2o.randomForest(y = "TARGET", 
                    x = col, 
                    training_frame = train.hex,
@@ -74,13 +39,13 @@ h2o.randomForest.model1 <-
                    nfolds = 5,
                    fold_assignment = c("Random"))
   
-h2o.auc(h2o.randomForest.model1)
+h2o.auc(h2o.randomForest.model4)
 # 0.8108148
-head(h2o.varimp(h2o.randomForest.model1),20)
+head(h2o.varimp(h2o.randomForest.model4),20)
 
 
 # Write Variables Importance
-write.csv(h2o.varimp(h2o.randomForest.model1), "outputs/variables_importance/variable_importances-h2o.randomForest.model1.csv", row.names = F)
+write.csv(h2o.varimp(h2o.randomForest.model4), "outputs/variables_importance/variable_importances-h2o.randomForest.model1.csv", row.names = F)
 
 
 #test$TARGET <- -1
@@ -88,27 +53,27 @@ write.csv(h2o.varimp(h2o.randomForest.model1), "outputs/variables_importance/var
 
 # Predicts
 
-h2o.randomForest.model1.pred = h2o.predict(object = h2o.randomForest.model1, newdata = test.hex)
-h2o.randomForest.model1.pred
-class(h2o.randomForest.model1.pred)
+h2o.randomForest.model4.pred = h2o.predict(object = h2o.randomForest.model4, newdata = test.hex)
+h2o.randomForest.model4.pred
+class(h2o.randomForest.model4.pred)
 
 
 # Transform H20Frame to DataFrame
-h2o.randomForest.model1.pred.df <-as.data.frame(h2o.predict(object = h2o.randomForest.model1, newdata = test.hex))
-h2o.randomForest.model1.pred.df
-class(h2o.randomForest.model1.pred.df)
+h2o.randomForest.model4.pred.df <-as.data.frame(h2o.predict(object = h2o.randomForest.model4, newdata = test.hex))
+h2o.randomForest.model4.pred.df
+class(h2o.randomForest.model4.pred.df)
 
 #pred<-exp(h2o.glm.model1.pred)
 
-h2o.auc(h2o.randomForest.model1)
+h2o.auc(h2o.randomForest.model4)
 
 # Add Test ID for the predictions
 test.id <- test$ID
 #test$TARGET <- -1
 
-submission <- data.frame(ID=test.id, TARGET=h2o.randomForest.model1.pred.df)
+submission <- data.frame(ID=test.id, TARGET=h2o.randomForest.model4.pred.df)
 cat("saving the submission file\n")
-write.csv(submission, "outputs/predictions/h2o.randomForest.model1.pred.df.csv", row.names = F)
+write.csv(submission, "outputs/predictions/h2o.randomForest.model4.pred.df.csv", row.names = F)
 
 # Find a way to create the submission file correctly to submit to Kaggle
 
