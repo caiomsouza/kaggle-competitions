@@ -296,10 +296,12 @@ Data preparation output:<BR>
 
 ### 11. Models
 
-Model Name              | Type            | AUC         | Comments
+Model File Name              | Type            | AUC         | Comments
 ------------            | -------------   | ------------| ------------
 [glm.model.1](http://github.com)            | GLM             | 0.80        | No comments
 randomforest.model.1    | Random Forest   | 0.82        | No comments
+randomforest.model.1    | Random Forest   | 0.82        | No comments
+[xgb.model.1.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.1.R) | XGB - Extreme Gradient Boosting | 0.825281 | Extreme Fast 
 
 
 
