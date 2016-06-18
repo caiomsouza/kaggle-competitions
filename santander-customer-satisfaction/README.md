@@ -1,9 +1,12 @@
-### 1. Project creator
-Caio Fernandes Moreno (caiofern@ucm.es)
-twitter: @caiomsouza
-+ 34 609 349 566
+### 1. Project Student and Professor
 
-Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)
+Student: <BR>
+Caio Fernandes Moreno (caiofern@ucm.es) <BR>
+twitter: @caiomsouza <BR>
++ 34 609 349 566 <BR>
+
+Professor: <BR>
+Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)<BR>
 
 ### 2. Faculty of Statistics at UCM
 
