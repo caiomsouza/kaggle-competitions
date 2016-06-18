@@ -2,6 +2,45 @@
 
 #http://rischanlab.github.io/SVM.html
 
+# Caio Fernandes Moreno
+
+rm(list = ls())
+setwd("~/git/github.com/kaggle-competitions/santander-customer-satisfaction")
+
+# Script to load the Train and Test Dataset
+source("src/utils/load_datasets.R")
+
+# Explore Dataset
+head(train,5)
+head(test,5)
+nrow(train)
+nrow(test)
+colnames(train)
+colnames(test)
+
+library(e1071)
+
+##### Removing IDs
+train$ID <- NULL
+test.id <- test$ID
+test$ID <- NULL
+
+svm.model <- svm(TARGET ~ ., data = train, cost = 100, gamma = 1)
+
+# make the prediction (the dependent variable, Type, has column number 10)
+
+svm.pred <- predict(svm.model, testset[,-10])
+
+table(pred = svm.pred, true = testset[,10])
+
+
+
+y = "TARGET"
+x <- colnames(train)[-372]
+
+model <- svm(y ~ . , train)
+
+predictedY <- predict(model, data)
 
 
 
