@@ -9,12 +9,12 @@ Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)<BR>
 
 ### 2. Faculty of Statistics at UCM
 
-Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)
-UCM - Universidad Complutense de Madrid
-Facultad de Estudios Estadísticos
-Avda. Puerta de Hierro s/n
-Ciudad Universitaria
-28040-MADRID
+Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)<BR>
+UCM - Universidad Complutense de Madrid<BR>
+Facultad de Estudios Estadísticos<BR>
+Avda. Puerta de Hierro s/n<BR>
+Ciudad Universitaria<BR>
+28040-MADRID<BR>
 
 ### 3. Kaggle Santander Customer Satisfaction Competition
 
