@@ -13,10 +13,7 @@ A Gradient Boosting Machine (GBM) is an ensemble of tree models (either regressi
 GBM is the most accurate general purpose algorithm. It can be used for analysis on numerous types of models and will always present relatively accurate results. Additionally, Gradient Boosting Machines are extremely robust, meaning that the user does not have to impute values or scale data (they can disregard distribution). This makes GBM the go-to choice for many users, as little tweaking is required in order to get accurate results. [1]
 
 ### Load data
-
-Script: https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/utils/load_datasets.R
-
-load_datasets.R
+../src/utils/load_datasets.R
 
 ```
 rm(list = ls())
@@ -45,6 +42,7 @@ cat(test.dataset.path)
 #summary(test)
 
 ```
+Script code:<BR> https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/utils/load_datasets.R<BR>
 
 ### Data preparation
 
