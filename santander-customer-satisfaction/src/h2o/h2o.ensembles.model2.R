@@ -15,6 +15,9 @@ source("src/utils/load_datasets.R")
 # Script to clean the Train and Test Dataset
 source("src/utils/clean_datasets.R")
 
+nrow(train)
+nrow(test)
+
 head(train, 3)
 summary(train)
 head(test, 3)
