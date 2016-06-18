@@ -356,4 +356,24 @@ https://www.kaggle.com/c/santander-customer-satisfaction/details/prizes<BR>
 8. subsemble. Available at: https://github.com/ledell/subsemble
 9. H2O Tutorials. Available at: http://learn.h2o.ai/content/
 10. Example lending_club_bad_loans_ensemble.R. Available at: https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/lending_club_bad_loans_ensemble.R
-11.
+11. H2O World 2015 Ensembles. Available at: https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/ensembles-stacking/H2O_World_2015_Ensembles.pdf
+
+
+http://www.ats.ucla.edu/stat/r/dae/logit.htm
+
+http://data.princeton.edu/R/linearModels.html
+
+11.http://rischanlab.github.io/SVM.html
+
+
+http://rischanlab.github.io/SVM.html
+
+http://www.cs.upc.edu/~belanche/Docencia/mineria/English-september-2008/Practical-work/Labo-SVMs.R
+http://www.svm-tutorial.com/2014/10/support-vector-regression-r/
+http://ethen8181.github.io/machine-learning/h2o/h2o_ensemble_tree/h2o_ensemble_tree.html
+
+https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/ensembles-stacking
+
+https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/h2o_ensemble_documentation_example.R
+
+https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/lending_club_bad_loans_ensemble.R
