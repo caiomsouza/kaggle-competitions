@@ -323,7 +323,7 @@ Model File Name              | Type            | AUC         | Comments
 * 33 submitted models to Kaggle Platform during the competition;
 
 ### 13. Personal Final Results
-My *final position* was 1599 from 5123 with AUC = 0.825471.
+My *final position* was 1599 from 5123 (0.3121218 or between the top 31%) with AUC of 0.825471.
 The first place had an AUC of 0.829072.
 
 The difference was 0.003601. First place receive a prize of $30,000.
