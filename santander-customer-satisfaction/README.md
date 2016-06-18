@@ -1,12 +1,18 @@
 ### Kaggle Santander Customer Satisfaction Competition
 
+This project was created by Caio.
+The main purpose of this work is to learn data mining.
+This is an academic project.
 
+Redes Neuronales y Algoritmos Genéticos
+Master degree in Data Mining and Business Intelligence
+UCM - "Universidad Complutense de Madrid"
 
+Started: 7:43 pm, Wednesday 2 March 2016 UTC<BR>
+Ended: 11:59 pm, Monday 2 May 2016 UTC (61 total days)<BR>
+
+Competition link:
 https://www.kaggle.com/c/santander-customer-satisfaction<BR>
-
-Started: 7:43 pm, Wednesday 2 March 2016 UTC
-Ended: 11:59 pm, Monday 2 May 2016 UTC (61 total days)
-
 
 ###The problem
 
