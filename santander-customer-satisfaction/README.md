@@ -298,7 +298,7 @@ Data preparation output:<BR>
 
 Model Name              | Type            | AUC         | Comments
 ------------            | -------------   | ------------| ------------
-glm.model.1             | GLM             | 0.80        | No comments
+[glm.model.1](http://github.com)            | GLM             | 0.80        | No comments
 randomforest.model.1    | Random Forest   | 0.82        | No comments
 
 
