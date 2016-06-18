@@ -303,9 +303,7 @@ Model File Name              | Type            | AUC         | Comments
 [h2o.glm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.1.R)  | H2o GLM           | 0.8027165      | Fast
 [h2o.glm.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.2.R)  | H2o GLM           | 0.8025738     | Fast
 [h2o.glm.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.3.R)  | H2o GLM           | 0.8025738     | Fast
-
-randomforest.model.1    | Random Forest   | 0.82        | No comments
-randomforest.model.1    | Random Forest   | 0.82        | No comments
+[h2o.randomforest.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.1.R)  | H2o Random Forest            | 0.8107832     | Slow
 
 
 ### 12. Project Resources
