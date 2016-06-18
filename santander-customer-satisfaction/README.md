@@ -307,6 +307,7 @@ Model File Name              | Type            | AUC         | Comments
 [h2o.randomforest.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.2.R)  | H2o Random Forest            | 0.8107832     | Slow
 [h2o.randomforest.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.3.R)  | H2o Random Forest            | 0.7802334     | Slow
 [h2o.randomforest.model.4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.4.R)  | H2o Random Forest            | 0.8107832     | Slow
+[h2o.deeplearning.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model1)  | H2o deeplearning            | 0.8018106     | Normal
 
 
 
