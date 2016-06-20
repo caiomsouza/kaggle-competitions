@@ -395,3 +395,7 @@ http://ethen8181.github.io/machine-learning/h2o/h2o_ensemble_tree/h2o_ensemble_t
 https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/ensembles-stacking<BR>
 https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/h2o_ensemble_documentation_example.R<BR>
 https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/lending_club_bad_loans_ensemble.R<BR>
+
+### 18. Super Machines
+
+When I executed the script [prueba grid 4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/prueba%20grid%204.R) I was not able to wait the script to finish. As we can see in the image below it took more than 32 hours to execute and I decided to stop it.
