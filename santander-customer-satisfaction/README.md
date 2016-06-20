@@ -340,6 +340,22 @@ https://www.kaggle.com/c/santander-customer-satisfaction/details/prizes<BR>
 
 ### 17. Conclusion
 
+The best model is the number 13 using H2o GBM. The reasons are:
+
+* Good prediction power;
+* Extreme Fast
+* Extreme easy to use;
+* Because of H2o ML Framework it is easy to scale this algorithm with Big Data.
+
+Algorithm using Random Forest are good options too, but they are slower.
+
+The use of SVM (Support Vector Machine) with this dataset is almost impossible, it takes hours and sometime
+days to execute it.
+
+Ensembles models are probable the best choice, but it is a little bit difficult to use it and a little bit
+slow.
+
+In the future I will add more models in this test table and make sure there is no better options.
 
 
 ### 14. References
