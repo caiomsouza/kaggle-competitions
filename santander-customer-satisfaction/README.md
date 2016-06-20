@@ -341,7 +341,7 @@ forget to send me a pull request If you find better models with better results.
 * More than 100 hours of personal dedication;
 * A lot of days dedicate to create models and submit at Kaggle;
 * 33 submitted models to Kaggle Platform during the competition;
-* A personal notebook with the configuratio below:
+* A personal notebook with the configuration below:
     * MacBook Pro (Retina, 15-inch, Mid 2014)
     * OS X El Capitan 10.11 Beta
     * Processor: 2,2 GHz Intel Core i7
