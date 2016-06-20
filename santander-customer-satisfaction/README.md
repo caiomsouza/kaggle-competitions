@@ -312,33 +312,7 @@ Model Number | Model File Name              | Type            | AUC         | Ex
 17 | [grid%20final%20todos.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/grid%20final%20todos.R)  | Mix of algorithms           | ??     | More than 36 hours
 
 
-
-### 12. Project Resources
-* Two semester of classes (SEMMA and Neuronal Networks);
-* More than 100 hours of personal dedication;
-* A lot of days dedicate to create models and submit at Kaggle;
-* 33 submitted models to Kaggle Platform during the competition;
-
-### 13. Personal Final Results
-My *final position* was 1599 from 5123 (0.3121218 or between the top 31%) with AUC of 0.825471.
-The first place had an AUC of 0.829072.
-
-The difference was 0.003601. First place receive a prize of $30,000.
-```
-> 0.829072 - 0.825471
-[1] 0.003601
-```
-
-Link to Private Leaderboard - Santander Customer Satisfaction
-https://www.kaggle.com/c/santander-customer-satisfaction/leaderboard
-
-Prizes<BR>
-1st place - $30,000<BR>
-2nd place - $20,000<BR>
-3rd place - $10,000<BR>
-https://www.kaggle.com/c/santander-customer-satisfaction/details/prizes<BR>
-
-### 17. Conclusion
+### 12. Conclusion
 
 The best model is the number 13 using H2o GBM. The reasons are:
 
@@ -362,11 +336,37 @@ Because of my lack of skills, time, etc I was not able to do a extensive researc
 Please, feel free to fork this project and help me find more models. Do not
 forget to send me a pull request If you find better models with better results.
 
-### 14. References
+### 13. Project Resources
+* Two semester of classes (SEMMA and Neuronal Networks);
+* More than 100 hours of personal dedication;
+* A lot of days dedicate to create models and submit at Kaggle;
+* 33 submitted models to Kaggle Platform during the competition;
+
+### 14. Personal Final Results
+My *final position* was 1599 from 5123 (0.3121218 or between the top 31%) with AUC of 0.825471.
+The first place had an AUC of 0.829072.
+
+The difference was 0.003601. First place receive a prize of $30,000.
+```
+> 0.829072 - 0.825471
+[1] 0.003601
+```
+
+Link to Private Leaderboard - Santander Customer Satisfaction
+https://www.kaggle.com/c/santander-customer-satisfaction/leaderboard
+
+Prizes<BR>
+1st place - $30,000<BR>
+2nd place - $20,000<BR>
+3rd place - $10,000<BR>
+https://www.kaggle.com/c/santander-customer-satisfaction/details/prizes<BR>
+
+
+### 15. References
 1. H2o.ai - Gradient Boosting Machine. Available at: http://www.h2o.ai/verticals/algos/gbm/
 2. Dal Pozzolo, Andrea, et al. "Racing for unbalanced methods selection." Intelligent Data Engi- neering and Automated Learning - IDEAL 2013. Springer Berlin Heidelberg, 2013. 24-31.
 
-### 15. Tutorials
+### 16. Tutorials
 1. Anomaly Detection on MNIST with H2O Deep Learning. Available at: https://github.com/h2oai/h2o-training-book/blob/master/hands-on_training/anomaly_detection.md
 2. A little H2O deeplearning experiment on the MNIST data set. Available at: http://www.r-bloggers.com/a-little-h2o-deeplearning-experiment-on-the-mnist-data-set/
 3. H2O GBM Tuning Tutorial for R. Available at: http://blog.h2o.ai/2016/06/h2o-gbm-tuning-tutorial-for-r/
@@ -380,7 +380,7 @@ forget to send me a pull request If you find better models with better results.
 11. H2O World 2015 Ensembles. Available at: https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/ensembles-stacking/H2O_World_2015_Ensembles.pdf
 
 
-### 16. Links
+### 17. Links
 http://www.ats.ucla.edu/stat/r/dae/logit.htm<BR>
 http://data.princeton.edu/R/linearModels.html<BR>
 http://rischanlab.github.io/SVM.html<BR>
