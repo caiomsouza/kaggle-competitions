@@ -291,7 +291,7 @@ Data preparation output:<BR>
 
 ### 11. Models
 
-# of the Model |Model File Name              | Type            | AUC         | Time to Execute
+# of the Model | Model File Name              | Type            | AUC         | Execution Time
 ------------            | ------------            | -------------   | ------------| ------------
 1 | [xgb.model.1.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.1.R) | xgboost is short for eXtreme Gradient Boosting | 0.825281 | Less than 5 minutes
 2 | [xgb.model.2.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.2.R) | xgboost is short for eXtreme Gradient Boosting | 0.826584 | Less than 5 minutes
