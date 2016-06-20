@@ -406,3 +406,198 @@ As we can see in the image below it took more than 32 hours to execute and I dec
 
 
 ![Image of prueba grid 4 Memory ](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/images/prueba_grid_4.R_images/prueba_grid_4.R_images01.png)
+
+Before I stopped I've got some results:
+
+```
+library(caret)
+Loading required package: lattice
+Loading required package: ggplot2
+Warning message:
+package 'ggplot2' was built under R version 3.2.3
+> library(gbm)
+Loading required package: survival
+
+Attaching package: 'survival'
+
+The following object is masked from 'package:caret':
+
+    cluster
+
+Loading required package: splines
+Loading required package: parallel
+Loaded gbm 2.1.1
+> set.seed(1000)
+> fitControl <- trainControl(method = "repeatedcv",number = 4,repeats = 10)
+> y <- train$TARGET
+> y <- train$TARGET
+>
+> set.seed(1000)
+> fitControl <- trainControl(method = "repeatedcv",number = 4,repeats = 10)
+>
+> # Ejemplo grid para gbm
+> gbmGrid <-  expand.grid(interaction.depth = c(3,6),
++                         n.trees = c(100),
++                         shrinkage =c(0.1,0.02),
++                         n.minobsinnode = c(5,10))
+>
+> gbmFit1 <- train(factor(y) ~ ., data = train,
++                  method = "gbm",trControl = fitControl,
++                  verbose = FALSE,tuneGrid=gbmGrid)
+Loading required package: plyr
+There were 50 or more warnings (use warnings() to see the first 50)
+> gbmFit1
+Stochastic Gradient Boosting
+
+76020 samples
+  308 predictor
+    2 classes: '0', '1'
+
+No pre-processing
+Resampling: Cross-Validated (4 fold, repeated 10 times)
+Summary of sample sizes: 57015, 57015, 57015, 57015, 57015, 57015, ...
+Resampling results across tuning parameters:
+
+  shrinkage  interaction.depth  n.minobsinnode  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.02       3                   5              1         1      0            0       
+  0.02       3                  10              1         1      0            0       
+  0.02       6                   5              1         1      0            0       
+  0.02       6                  10              1         1      0            0       
+  0.10       3                   5              1         1      0            0       
+  0.10       3                  10              1         1      0            0       
+  0.10       6                   5              1         1      0            0       
+  0.10       6                  10              1         1      0            0       
+
+Tuning parameter 'n.trees' was held constant at a value of 100
+Accuracy was used to select the optimal model using  the largest value.
+The final values used for the model were n.trees = 100, interaction.depth = 3, shrinkage = 0.02 and n.minobsinnode = 5.
+> gbmGrid <-  expand.grid(interaction.depth = c(3),
++                         n.trees = c(100),shrinkage =c(0.02),
++                         n.minobsinnode = c(5))
+>
+> gbmFit2 <- train(factor(y) ~ ., data = train,
++                  method = "gbm",trControl = fitControl,
++                   verbose = FALSE,tuneGrid=gbmGrid)
+There were 50 or more warnings (use warnings() to see the first 50)
+>
+>
+> logisfit <- train(factor(y) ~ ., data = train,
++                  method = "glm",trControl = fitControl)
+There were 50 or more warnings (use warnings() to see the first 50)
+>
+> logisfit
+Generalized Linear Model
+
+76020 samples
+  308 predictor
+    2 classes: '0', '1'
+
+No pre-processing
+Resampling: Cross-Validated (4 fold, repeated 10 times)
+Summary of sample sizes: 57015, 57015, 57015, 57015, 57015, 57015, ...
+Resampling results
+
+  Accuracy   Kappa      Accuracy SD   Kappa SD    
+  0.9999961  0.9999481  1.403561e-05  0.0001845475
+
+
+>
+> # **************************************
+> # EJEMPLO GRID RANDOM FOREST
+> # (SOLO PERMITE VARIAR MTRY)
+> # **************************************
+>
+> # Conservo el anterior fitControl de validaci?n cruzada para comparar
+> # todos los modelos que voy creando
+>
+> grid2 <- expand.grid(mtry=c(4,8,10))
+>  
+> # En esta ejecucion no pongo numero de muestra y utiliza
+> # por defecto todas las observaciones CON reemplazo
+>
+> raforest <- train(factor(y) ~ ., data = train,
++ method = "rf",trControl = fitControl,maxnodes=50,
++  nodesize=10,ntree=100,tuneGrid=grid2)
+Loading required package: randomForest
+randomForest 4.6-10
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: 'randomForest'
+
+The following object is masked from 'package:ggplot2':
+
+    margin
+
+>
+> raforest
+Random Forest
+
+76020 samples
+  308 predictor
+    2 classes: '0', '1'
+
+No pre-processing
+Resampling: Cross-Validated (4 fold, repeated 10 times)
+Summary of sample sizes: 57015, 57015, 57015, 57015, 57015, 57015, ...
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa         Accuracy SD   Kappa SD    
+   4    0.9604315  0.0000000000  0.000000e+00  0.0000000000
+   8    0.9604354  0.0001913411  1.403561e-05  0.0006805284
+  10    0.9604512  0.0009567056  2.579797e-05  0.0012508360
+
+Accuracy was used to select the optimal model using  the largest value.
+The final value used for the model was mtry = 10.
+>
+> # *********************************************************
+> # Ejemplo Grid con par?metros que no est?n considerados en caret
+> # Por ejemplo quiero variar maxnodes y mtry en random forest
+> # *********************************************************
+>
+> # Creo datafin  y final archivo vac?o
+>
+> datafin=data.frame(mtry=numeric(0),Accuracy=numeric(0),Kappa=numeric(0),
++  AccuracySD=numeric(0),KappaSD=numeric(0),nodes=numeric(0))
+>
+> final=data.frame(Accuracy=numeric(0),Kappa=numeric(0), nodes=numeric(0),mtr=numeric(0))
+>
+> # bucle para maxnodes y mtry
+>
+> for(maxinodes in c(50,100))       {
++  
++  for(mtr in c(4,10))      {
++
++  grid3 <- expand.grid(mtry=c(mtr))
++   
++ raforest <- train(factor(y) ~ ., data = train,
++ method = "rf",trControl = fitControl,maxnodes=maxinodes,
++ nodesize=10,ntree=200,tuneGrid=grid3)
++
++ #  El elemento 4 de la lista raforest son los resultados globales
++ #  y el 14 las muestras
++  
++ dat<-as.data.frame(raforest[[4]])
++ dat$nodes<-maxinodes
++ datafin<-rbind(datafin,dat)
++
++ ver<-as.data.frame(raforest[[14]])
++ ver<-ver[,-3]
++ ver$nodes<- maxinodes
++ ver$mtr<- mtr
++ final<-rbind(final,ver)
++  
++ }}
+>
+> boxplot(Accuracy ~ factor(nodes)+factor(mtr),data=final)
+>
+> # Suponiendo que el mejor modelo Randomforest tiene 100 nodos, 4 variables
+>
+> grid3 <- expand.grid(mtry=c(4))
+>
+> raforest <- train(factor(y) ~ ., data = train,
++ method = "rf",trControl = fitControl,maxnodes=100,
++ nodesize=10,ntree=1000,tuneGrid=grid3)
+
+```
+
+![Image of prueba grid 4 Plot Result ](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/images/prueba_grid_4.R_images/prueba_grid_4.R_images04.png)
