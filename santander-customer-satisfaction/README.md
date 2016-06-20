@@ -398,4 +398,8 @@ https://github.com/h2oai/h2o-3/blob/master/h2o-r/ensemble/demos/lending_club_bad
 
 ### 18. Super Machines
 
-When I executed the script [prueba grid 4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/prueba%20grid%204.R) I was not able to wait the script to finish. As we can see in the image below it took more than 32 hours to execute and I decided to stop it.
+When I executed the script [prueba grid 4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/prueba%20grid%204.R) I was not able to wait the script to finish.
+
+As we can see in the image below it took more than 32 hours to execute and I decided to stop it.
+
+![Image of prueba grid 4](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/images/prueba_grid_4.R_images/prueba_grid_4.R_images01.png)
