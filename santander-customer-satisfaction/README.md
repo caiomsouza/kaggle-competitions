@@ -402,4 +402,7 @@ When I executed the script [prueba grid 4.R](https://github.com/caiomsouza/kaggl
 
 As we can see in the image below it took more than 32 hours to execute and I decided to stop it.
 
-![Image of prueba grid 4](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/images/prueba_grid_4.R_images/prueba_grid_4.R_images01.png)
+![Image of prueba grid 4 CPU ](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/images/prueba_grid_4.R_images/prueba_grid_4.R_images02.png)
+
+
+![Image of prueba grid 4 Memory ](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/images/prueba_grid_4.R_images/prueba_grid_4.R_images01.png)
