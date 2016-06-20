@@ -357,6 +357,10 @@ slow.
 
 In the future I will add more models in this test table and make sure there is no better options.
 
+Because of my lack of skills, time, etc I was not able to do a extensive research about more possibilities of models and I am sure there are better options.
+
+Please, feel free to fork this project and help me find more models. Do not
+forget to send me a pull request If you find better models with better results.
 
 ### 14. References
 1. H2o.ai - Gradient Boosting Machine. Available at: http://www.h2o.ai/verticals/algos/gbm/
