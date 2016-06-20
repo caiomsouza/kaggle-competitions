@@ -321,7 +321,7 @@ The best model is the number 13 using H2o GBM. The reasons are:
 * Extreme easy to use;
 * Because of H2o ML Framework it is easy to scale this algorithm with Big Data.
 
-Algorithm using Random Forest are good options too, but they are slower.
+Algorithm using Random Forest are good options too, but they are slow.
 
 The use of SVM (Support Vector Machine) with this dataset is almost impossible, it takes hours and sometime
 days to execute it.
@@ -341,6 +341,11 @@ forget to send me a pull request If you find better models with better results.
 * More than 100 hours of personal dedication;
 * A lot of days dedicate to create models and submit at Kaggle;
 * 33 submitted models to Kaggle Platform during the competition;
+* A personal notebook with the configuratio below:
+    * MacBook Pro (Retina, 15-inch, Mid 2014)
+    * OS X El Capitan 10.11 Beta
+    * Processor: 2,2 GHz Intel Core i7
+    * Memory: 16 GB 1600 MHz DDR3
 
 ### 14. Personal Final Results
 My *final position* was 1599 from 5123 (0.3121218 or between the top 31%) with AUC of 0.825471.
