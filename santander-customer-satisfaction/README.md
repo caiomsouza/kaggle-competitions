@@ -7,6 +7,14 @@ twitter: @caiomsouza <BR>
 Professor: <BR>
 Prof. Phd. Javier Portella<BR>
 
+The Project: <BR>
+All the files for the class project is available at:<BR>
+https://github.com/caiomsouza/kaggle-competitions/tree/master/santander-customer-satisfaction
+
+This is an open source project.<BR>
+The MIT License (MIT)<BR>
+https://opensource.org/licenses/MIT<BR>
+
 ### 2. Faculty of Statistics at UCM
 
 Prof. Phd. Javier Portella (Javier Portela <javipgm@gmail.com>)<BR>
