@@ -1,12 +1,32 @@
+rm(list = ls())
+setwd("~/git/github.com/kaggle-competitions/santander-customer-satisfaction")
+
+# Script to load the Train and Test Dataset
+source("src/utils/load_datasets.R")
+
+# Script to clean the Train and Test Dataset
+source("src/utils/clean_datasets.R")
+
+# Explore Dataset
+head(train,5)
+head(test,5)
+nrow(train)
+nrow(test)
+colnames(train)
+colnames(test)
+
+
 library(sas7bdat)
 library(caret)
 library(gbm)
 
 # Control de semilla importante para validaci?n cruzada
 
-german<-read.sas7bdat("C:/germanredux.sas7bdat")
-train<-german
-bad<-train$bad
+#german<-read.sas7bdat("C:/germanredux.sas7bdat")
+#train<-german
+#bad<-train$bad
+
+y <- train$TARGET
 
 set.seed(1000)
 fitControl <- trainControl(method = "repeatedcv",number = 4,repeats = 10)
@@ -17,7 +37,7 @@ gbmGrid <-  expand.grid(interaction.depth = c(3,6),
                         shrinkage =c(0.1,0.02),
                         n.minobsinnode = c(5,10))
 
-gbmFit1 <- train(factor(bad) ~ ., data = train,
+gbmFit1 <- train(factor(y) ~ ., data = train,
                  method = "gbm",trControl = fitControl,
                  verbose = FALSE,tuneGrid=gbmGrid)
 gbmFit1
@@ -25,16 +45,18 @@ gbmFit1
 # Una vez decididos los par?metros los fijo para comparar con log?stica
 # y random forest
 
-gbmGrid <-  expand.grid(interaction.depth = c(3),
-                        n.trees = c(1000),shrinkage =c(0.02),
-                        n.minobsinnode = c(6))
+# The final values used for the model were n.trees = 100, interaction.depth = 3, shrinkage = 0.02 and n.minobsinnode = 5.
 
-gbmFit2 <- train(factor(bad) ~ ., data = train,
+gbmGrid <-  expand.grid(interaction.depth = c(3),
+                        n.trees = c(100),shrinkage =c(0.02),
+                        n.minobsinnode = c(5))
+
+gbmFit2 <- train(factor(y) ~ ., data = train,
                  method = "gbm",trControl = fitControl,
                   verbose = FALSE,tuneGrid=gbmGrid)
 
 
-logisfit <- train(factor(bad) ~ ., data = train,
+logisfit <- train(factor(y) ~ ., data = train,
                  method = "glm",trControl = fitControl)
 
 logisfit
@@ -52,7 +74,7 @@ grid2 <- expand.grid(mtry=c(4,8,10))
 # En esta ejecucion no pongo numero de muestra y utiliza 
 # por defecto todas las observaciones CON reemplazo
 
-raforest <- train(factor(bad) ~ ., data = train,
+raforest <- train(factor(y) ~ ., data = train,
 method = "rf",trControl = fitControl,maxnodes=50,
  nodesize=10,ntree=100,tuneGrid=grid2)
 
@@ -78,7 +100,7 @@ for(maxinodes in c(50,100))       {
 
  grid3 <- expand.grid(mtry=c(mtr)) 
   
-raforest <- train(factor(bad) ~ ., data = train,
+raforest <- train(factor(y) ~ ., data = train,
 method = "rf",trControl = fitControl,maxnodes=maxinodes,
 nodesize=10,ntree=200,tuneGrid=grid3)
 
@@ -103,7 +125,7 @@ boxplot(Accuracy ~ factor(nodes)+factor(mtr),data=final)
 
 grid3 <- expand.grid(mtry=c(4)) 
 
-raforest <- train(factor(bad) ~ ., data = train,
+raforest <- train(factor(y) ~ ., data = train,
 method = "rf",trControl = fitControl,maxnodes=100,
 nodesize=10,ntree=1000,tuneGrid=grid3)
 

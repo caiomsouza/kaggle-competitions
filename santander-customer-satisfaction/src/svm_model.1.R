@@ -27,6 +27,8 @@ test$ID <- NULL
 
 svm.model <- svm(TARGET ~ ., data = train, cost = 100, gamma = 1)
 
+summary(svm.model)
+
 # make the prediction (the dependent variable, Type, has column number 10)
 
 svm.pred <- predict(svm.model, testset[,-10])
