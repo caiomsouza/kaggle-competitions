@@ -291,25 +291,25 @@ Data preparation output:<BR>
 
 ### 11. Models
 
-Model File Name              | Type            | AUC         | Time to Execute
-------------            | -------------   | ------------| ------------
-[xgb.model.1.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.1.R) | xgboost is short for eXtreme Gradient Boosting | 0.825281 | Less than 5 minutes
-[xgb.model.2.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.2.R) | xgboost is short for eXtreme Gradient Boosting | 0.826584 | Less than 5 minutes
-[h2o.glm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.1.R)  | H2o GLM           | 0.8027165      | Less than 5 minutes
-[h2o.glm.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.2.R)  | H2o GLM           | 0.8025738     | Less than 5 minutes
-[h2o.glm.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.3.R)  | H2o GLM           | 0.8025738     | Less than 5 minutes
-[h2o.randomforest.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.1.R)  | H2o Random Forest            | 0.8107832     | Between 5 min to 30 min
-[h2o.randomforest.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.2.R)  | H2o Random Forest            | 0.8107832     | Between 5 min to 30 min
-[h2o.randomforest.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.3.R)  | H2o Random Forest            | 0.7802334     | Between 5 min to 30 min
-[h2o.randomforest.model.4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.4.R)  | H2o Random Forest            | 0.8107832     | Between 5 min to 30 min
-[h2o.deeplearning.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.1.R)  | H2o deeplearning            | 0.8018106     | Between 5 min to 30 min
-[h2o.deeplearning.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.2.R)  | H2o deeplearning            | 0.7790996     | Between 5 min to 30 min
-[h2o.deeplearning.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.3.R)  | H2o deeplearning            | ?     | Between 5 min to 30 min
-[h2o.gbm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.gbm.model.1.R)  | H2o GBM            | *0.8766553*     | Between 5 min to 30 min
-[h2o.ensembles.model1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.ensembles.model1.R)  | H2o ensembles             | ??     | Between 5 min to 30 min
-[h2o.stack_models.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o_stack_models.R)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables             | ??     | Between 5 min to 30 min
-[svm_model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/svm_model.1.R)  | SVM (Support Vector Machines)           | ??     | More than 36 hours
-[grid%20final%20todos.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/grid%20final%20todos.R)  | Mix of algorithms           | ??     | More than 36 hours
+# of the Model |Model File Name              | Type            | AUC         | Time to Execute
+------------            | ------------            | -------------   | ------------| ------------
+1 | [xgb.model.1.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.1.R) | xgboost is short for eXtreme Gradient Boosting | 0.825281 | Less than 5 minutes
+2 | [xgb.model.2.R] (https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/xgb.model.2.R) | xgboost is short for eXtreme Gradient Boosting | 0.826584 | Less than 5 minutes
+3 | [h2o.glm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.1.R)  | H2o GLM           | 0.8027165      | Less than 5 minutes
+4 | [h2o.glm.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.2.R)  | H2o GLM           | 0.8025738     | Less than 5 minutes
+5 | [h2o.glm.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.glm.model.3.R)  | H2o GLM           | 0.8025738     | Less than 5 minutes
+6 | [h2o.randomforest.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.1.R)  | H2o Random Forest            | 0.8107832     | Between 5 min to 30 min
+7 | [h2o.randomforest.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.2.R)  | H2o Random Forest            | 0.8107832     | Between 5 min to 30 min
+8 | [h2o.randomforest.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.3.R)  | H2o Random Forest            | 0.7802334     | Between 5 min to 30 min
+9 | [h2o.randomforest.model.4.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.randomforest.model.4.R)  | H2o Random Forest            | 0.8107832     | Between 5 min to 30 min
+10 | [h2o.deeplearning.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.1.R)  | H2o deeplearning            | 0.8018106     | Between 5 min to 30 min
+11 | [h2o.deeplearning.model.2.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.2.R)  | H2o deeplearning            | 0.7790996     | Between 5 min to 30 min
+12 | [h2o.deeplearning.model.3.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.deeplearning.model.3.R)  | H2o deeplearning            | ?     | Between 5 min to 30 min
+13 | [h2o.gbm.model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.gbm.model.1.R)  | H2o GBM            | *0.8766553*     | Between 5 min to 30 min
+14 | [h2o.ensembles.model1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.ensembles.model1.R)  | H2o ensembles             | ??     | Between 5 min to 30 min
+15 | [h2o.stack_models.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o_stack_models.R)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables             | ??     | Between 5 min to 30 min
+16 | [svm_model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/svm_model.1.R)  | SVM (Support Vector Machines)           | ??     | More than 36 hours
+[17 | grid%20final%20todos.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/grid%20final%20todos.R)  | Mix of algorithms           | ??     | More than 36 hours
 
 
 
@@ -337,6 +337,10 @@ Prizes<BR>
 2nd place - $20,000<BR>
 3rd place - $10,000<BR>
 https://www.kaggle.com/c/santander-customer-satisfaction/details/prizes<BR>
+
+### 17. Conclusion
+
+
 
 ### 14. References
 1. H2o.ai - Gradient Boosting Machine. Available at: http://www.h2o.ai/verticals/algos/gbm/
