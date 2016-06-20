@@ -309,7 +309,7 @@ Model Number | Model File Name              | Type            | AUC         | Ex
 14 | [h2o.ensembles.model1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o.ensembles.model1.R)  | H2o ensembles             | ??     | Between 5 min to 30 min
 15 | [h2o.stack_models.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/h2o/h2o_stack_models.R)  | H2o Stack Model (GLM, GBM, Random Forest, Deeplearning) with all variables             | ??     | Between 5 min to 30 min
 16 | [svm_model.1.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/svm_model.1.R)  | SVM (Support Vector Machines)           | ??     | More than 36 hours
-[17 | grid%20final%20todos.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/grid%20final%20todos.R)  | Mix of algorithms           | ??     | More than 36 hours
+17 | [grid%20final%20todos.R](https://github.com/caiomsouza/kaggle-competitions/blob/master/santander-customer-satisfaction/src/grid%20final%20todos.R)  | Mix of algorithms           | ??     | More than 36 hours
 
 
 
