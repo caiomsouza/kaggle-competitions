@@ -38,8 +38,6 @@ h2o.glm.model1
 # AIC:  22219.82
 # Gini:  0.6054167
 
-h2o.varimp(h2o.glm.model1)
-
 # Write Variables Importance
 write.csv(h2o.varimp(h2o.glm.model1), "outputs/variables_importance/variable_importances-h2o.glm.model1.csv", row.names = F)
 
