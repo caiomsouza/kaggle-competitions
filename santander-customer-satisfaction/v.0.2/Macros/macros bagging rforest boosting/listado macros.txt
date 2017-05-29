@@ -1,0 +1,27 @@
+ARCHIVO 
+
+"TODAS MACROS BAGGING-RANDOMFOREST-BOOSTING"
+
+Se trata de macros tipo partición-test para los diferentes algoritmos
+y comparación con logística en algunos casos.
+
+-bagging
+-baggingbin
+-randomforestbin
+-boostingbin
+
+
+
+ARCHIVO 
+
+CRUZADAS BAGG FOREST BOOSTING
+
+Archivos para validación cruzada repetida
+
+-cruzadatreeboost
+-cruzadatreeboostbin
+-cruzadarandomforestbin
+-cruzadabaggingbin
+
+
+

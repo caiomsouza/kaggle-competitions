@@ -1,0 +1,63 @@
+> library(sas7bdat)
+> library(caret)
+Loading required package: lattice
+Loading required package: ggplot2
+Warning message:
+package 'ggplot2' was built under R version 3.2.3
+> library(gbm)
+Loading required package: survival
+
+Attaching package: 'survival'
+
+The following object is masked from 'package:caret':
+
+    cluster
+
+Loading required package: splines
+Loading required package: parallel
+Loaded gbm 2.1.1
+> set.seed(1000)
+> fitControl <- trainControl(method = "repeatedcv",number = 4,repeats = 10)
+> y <- train$TARGET
+> y <- train$TARGET
+>
+> set.seed(1000)
+> fitControl <- trainControl(method = "repeatedcv",number = 4,repeats = 10)
+>
+> # Ejemplo grid para gbm
+> gbmGrid <-  expand.grid(interaction.depth = c(3,6),
++                         n.trees = c(100),
++                         shrinkage =c(0.1,0.02),
++                         n.minobsinnode = c(5,10))
+>
+> gbmFit1 <- train(factor(y) ~ ., data = train,
++                  method = "gbm",trControl = fitControl,
++                  verbose = FALSE,tuneGrid=gbmGrid)
+Loading required package: plyr
+There were 50 or more warnings (use warnings() to see the first 50)
+> gbmFit1
+Stochastic Gradient Boosting
+
+76020 samples
+  308 predictor
+    2 classes: '0', '1'
+
+No pre-processing
+Resampling: Cross-Validated (4 fold, repeated 10 times)
+Summary of sample sizes: 57015, 57015, 57015, 57015, 57015, 57015, ...
+Resampling results across tuning parameters:
+
+  shrinkage  interaction.depth  n.minobsinnode  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.02       3                   5              1         1      0            0
+  0.02       3                  10              1         1      0            0
+  0.02       6                   5              1         1      0            0
+  0.02       6                  10              1         1      0            0
+  0.10       3                   5              1         1      0            0
+  0.10       3                  10              1         1      0            0
+  0.10       6                   5              1         1      0            0
+  0.10       6                  10              1         1      0            0
+
+Tuning parameter 'n.trees' was held constant at a value of 100
+Accuracy was used to select the optimal model using  the largest value.
+The final values used for the model were n.trees = 100, interaction.depth = 3, shrinkage = 0.02 and n.minobsinnode = 5.
+> 
