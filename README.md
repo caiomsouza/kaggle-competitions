@@ -13,7 +13,7 @@ Gender discrimination based on handwriting  <BR>
 https://github.com/zygmuntz/kaggle-gender  <BR>
   
 Predicting advertised salaries <BR>  
-https://github.com/zygmuntz/kaggle-advertised-salaries<BR>
+https://github.com/zygmuntz/kaggle-advertised-salaries <BR>
   
 Predicting happiness from demographics and poll answers  <BR>
 https://github.com/zygmuntz/kaggle-happiness  <BR>
