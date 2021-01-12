@@ -9,11 +9,8 @@ Titanic<BR>
 https://github.com/birchsport/titanic  <BR>
 https://github.com/agconti/kaggle-titanic <BR>
   
-Gender discrimination based on handwriting  <BR>
-https://github.com/zygmuntz/kaggle-gender  <BR>
+Gender discrimination based on handwriting: https://github.com/zygmuntz/kaggle-gender  <BR>
     
-Predicting happiness from demographics and poll answers  <BR>
-https://github.com/zygmuntz/kaggle-happiness  <BR>
+Predicting happiness from demographics and poll answers: https://github.com/zygmuntz/kaggle-happiness  <BR>
   
-Predicting advertised salaries
-https://github.com/zygmuntz/kaggle-advertised-salaries <BR>  
+Predicting advertised salaries: https://github.com/zygmuntz/kaggle-advertised-salaries <BR>  
