@@ -15,5 +15,5 @@ https://github.com/zygmuntz/kaggle-gender  <BR>
 Predicting happiness from demographics and poll answers  <BR>
 https://github.com/zygmuntz/kaggle-happiness  <BR>
   
-Predicting advertised salaries <BR>  
+Predicting advertised salaries
 https://github.com/zygmuntz/kaggle-advertised-salaries <BR>  
